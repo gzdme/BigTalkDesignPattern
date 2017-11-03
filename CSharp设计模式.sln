@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11状态模式", "11状态�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12适配器模式", "12适配器模式\12适配器模式.csproj", "{30DE77B5-649E-4481-8FAD-81A9DE6FC8AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13备忘录模式", "13备忘录模式\13备忘录模式.csproj", "{A453F0A0-A4FB-4A02-872F-E800ADB642DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{30DE77B5-649E-4481-8FAD-81A9DE6FC8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30DE77B5-649E-4481-8FAD-81A9DE6FC8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30DE77B5-649E-4481-8FAD-81A9DE6FC8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A453F0A0-A4FB-4A02-872F-E800ADB642DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A453F0A0-A4FB-4A02-872F-E800ADB642DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A453F0A0-A4FB-4A02-872F-E800ADB642DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A453F0A0-A4FB-4A02-872F-E800ADB642DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
