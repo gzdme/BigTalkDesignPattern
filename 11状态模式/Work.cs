@@ -149,6 +149,25 @@ namespace 状态模式
     {
         public override void WriteProgram(Work work)
         {
+            //if (work.TaskFinished)
+            //            {
+            //                work.State = new RestState();
+            //                work.WriteProgram();
+            //            }
+            //            else
+            //            {
+            //                if (work.Hour < 21)
+            //                {
+            //                    Console.WriteLine("当前时间： {0}点 加班哦， 疲累之极", work.Hour);
+            //                }
+            //                else
+            //                {
+            //                    work.State = new SleepingState();
+            //                    work.WriteProgram();
+            //                }
+            //            }
+
+            #region 很方便的增加 “公司规定20点之前，所有员工必须离开公司” 的条件判断
             if (work.TaskFinished)
             {
                 work.State = new RestState();
@@ -156,16 +175,24 @@ namespace 状态模式
             }
             else
             {
-                if (work.Hour < 21)
+                if (work.Hour < 20)
                 {
                     Console.WriteLine("当前时间： {0}点 加班哦， 疲累之极", work.Hour);
                 }
                 else
                 {
-                    work.State = new SleepingState();
-                    work.WriteProgram();
+                    if (work.Hour < 22)
+                    {
+                        Console.WriteLine("当前时间： {0}点 公司规定20点之前，所有员工必须离开公司", work.Hour);
+                    }
+                    else
+                    {
+                        work.State = new SleepingState();
+                        work.WriteProgram();
+                    }
                 }
             }
+            #endregion
         }
     }
     public class SleepingState : WState

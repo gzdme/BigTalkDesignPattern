@@ -91,13 +91,19 @@ namespace 状态模式
             emergencyProjects.Hour = 17;
             emergencyProjects.WriteProgram();
 
-            emergencyProjects.TaskFinished = true;
-            //emergencyProjects.TaskFinished = false;
+            //emergencyProjects.TaskFinished = true;
+            emergencyProjects.TaskFinished = false;
 
             emergencyProjects.WriteProgram();
             emergencyProjects.Hour = 19;
             emergencyProjects.WriteProgram();
+            emergencyProjects.Hour = 20;
+            emergencyProjects.WriteProgram();
+            emergencyProjects.Hour = 21;
+            emergencyProjects.WriteProgram();
             emergencyProjects.Hour = 22;
+            emergencyProjects.WriteProgram();
+            emergencyProjects.Hour = 23;
             emergencyProjects.WriteProgram();
 
             Console.Read();
